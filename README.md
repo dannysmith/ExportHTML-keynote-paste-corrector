@@ -5,7 +5,7 @@ When building Keynote or PowerPoint presentations, I've often wanted an easy way
 
 ![Animation of export process](http://f.cl.ly/items/2z2w2L341t1u0g2H1N1v/mbVrhkJhw7.gif)
 
-If you just want the bookmarklet, you can get it here: 
+If you just want the bookmarklet, you can get it here: http://dannysmith.github.io/ExportHTML-keynote-paste-corrector/
 
 
 ## Browser Support
@@ -21,7 +21,7 @@ If you just want the bookmarklet, you can get it here:
 ## Installation & Setup
 
 1. [Install Isaac Muses ExportHTML plugin for Sublime Text](http://facelessuser.github.io/ExportHtml/installation/).
-2. [Visit this page] and drag the bookmarklet to your bookmarks bar.
+2. [Visit this page](http://dannysmith.github.io/ExportHTML-keynote-paste-corrector/) and drag the bookmarklet to your bookmarks bar.
 3. Setting up your theme
 4. Set up your ExportHTML settings.
 
