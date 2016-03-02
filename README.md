@@ -27,10 +27,19 @@ If you just want the bookmarklet, you can get it here: http://dannysmith.github.
 
 
 
-### Setting up a `tmTheme` file
+### Setting up `tmTheme` files
 
-TODO
+Sublime Text uses `.tmtheme` files. You can configure ExportHTML to use more than one theme when exporting, and then select your preferred one at the point you export it. I use the [Extended Railscasts](https://github.com/jevzee/sublime-railscasts-extended) theme by @jevzee, with a few minor changes. You can [edit and create theme files online](http://tmtheme-editor.herokuapp.com).
 
+For the plugin and bookmarklet to work properly, you need to create a second version of your themes without background colours. I prefix those without background colours with `-nobackground`. Here's a diff of the original theme and the one with backgrounds removed:
+
+![Diff of original theme and nobackground theme](http://f.cl.ly/items/2N2U2U3Y3c3G393g291a/Screen%20Shot%202016-03-02%20at%2002.22.42.png)
+
+Once you've got your backgroundless theme sorted, you should save is somewhere in Sublime text's packages directory. The code below assumes it's in `/Packages/User`:
+
+```
+Packages/User/railscasts-extended-dannysmith-nobackground.tmTheme
+```
 
 ### Your ExportHTML Settings
 
@@ -45,7 +54,7 @@ Turn off numbers, browser print, gutters and header.
       "Sparta Theme without Backgrounds": {
         "numbers": false,
         "browser_print": false,
-        "color_scheme": "Packages/User/spartaglobal.tmTheme",
+        "color_scheme": "Packages/User/railscasts-extended-dannysmith-nobackground.tmTheme",
         "style_gutter": false,
         "no_header": true
       }
@@ -63,7 +72,7 @@ You could also set up a key binding:
     "args": {
           "numbers": false,
           "browser_print": false,
-          "color_scheme": "Packages/User/spartaglobal.tmTheme",
+          "color_scheme": "Packages/User/railscasts-extended-dannysmith-nobackground.tmTheme",
           "style_gutter": false,
           "no_header": true
     }
@@ -84,4 +93,4 @@ You could also set up a key binding:
 6. Paste into Keynote (⌘ + V) or "Paste Special" into PowerPoint for mac (^ + ⌘ + V then ⏎).
 
 ## Thanks
-Obviously, thanks to Isaac Muse (@facelessuser) for making the ExportHTML plugin.
+Obviously, thanks to Isaac Muse (@facelessuser) for making the ExportHTML plugin, which has saved me heaps of time.
